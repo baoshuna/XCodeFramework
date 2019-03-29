@@ -34,7 +34,6 @@ namespace XCodeFramework.Web.Controllers
         }
 
         // [ValidateAntiForgeryToken]
-        // only for test
         public ActionResult Index()
         {
             var result = studentService.GetList();

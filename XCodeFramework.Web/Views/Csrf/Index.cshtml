@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Notice", "Csrf"))
+        {
+            //Html.AntiForgeryToken();
+            <input type="text" name="notice" />
+            <input type="submit" value="发广告" />
+        }
+    </div>
+</body>
+</html>
